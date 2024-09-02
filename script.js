@@ -3,9 +3,11 @@ window.onload = function() {
     const elements = document.querySelectorAll('.team-member');
     elements.forEach(elem => elem.addEventListener('mouseenter', evt => {
         evt.target.style.border = 'solid';
+        evt.target.style.boxShadow = '5px 5px 5px lightgray';
     }));
     elements.forEach(elem => elem.addEventListener('mouseleave', evt => {
         evt.target.style.border = 'none';
+        evt.target.style.boxShadow = 'none';
     }));
 }
 var editTitle = function(e) {
